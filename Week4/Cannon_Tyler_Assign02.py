@@ -14,8 +14,17 @@ Tigers = input("Enter the number of Tigers: ")
 #calculations
 
 Total = Lions + Tigers
-PercentLions = Lions/Total
-PercentTigers = Tigers/Total
+PercentLions = Lions / Total
+PercentTigers = Tigers / Total
 
 #Prints
-print("=" * 80)
+print("=" * 60)
+print(f"Local Zoo - Big Cats Report: By {CustomerName}")
+print("=" * 60)
+print(f"Number of Lions: {Lions}")
+print(f"Number of Tigers: {Tigers}")
+print(f"Total Big Cats: {Total}")
+print("=" * 60)
+print(f"Lions: {PercentLions}")
+print(f"Tigers: {PercentTigers}")
+print("=" * 60)
