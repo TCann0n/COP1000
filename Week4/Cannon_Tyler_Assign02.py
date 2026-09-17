@@ -7,24 +7,39 @@
 
 #inputs
 
+#input for customer name
 CustomerName = input("Enter your first and last name: ")
-Lions = input("Enter the number of Lions: ")
-Tigers = input("Enter the number of Tigers: ")
+#input for the number of lions
+Lions = int(input("Enter the number of Lions: "))
+#input for the number of tigers
+Tigers = int(input("Enter the number of Tigers: "))
 
 #calculations
-
+#Total of Big cats
 Total = Lions + Tigers
+#Percentage of big cats that are lions
 PercentLions = Lions / Total
+#Percentage of big cats that are tigers
 PercentTigers = Tigers / Total
 
 #Prints
+#border
 print("=" * 60)
-print(f"Local Zoo - Big Cats Report: By {CustomerName}")
+#header display
+print(f"Local Zoo - Big Cats Report: By {CustomerName}".center(60))
+#border
 print("=" * 60)
-print(f"Number of Lions: {Lions}")
-print(f"Number of Tigers: {Tigers}")
-print(f"Total Big Cats: {Total}")
+#number of lions printed
+print(f"Number of Lions: {Lions}".center(60))
+#number of tigers printed
+print(f"Number of Tigers: {Tigers}".center(60))
+#total number of big cats printed
+print(f"Total Big Cats: {Total}".center(60))
+#border
 print("=" * 60)
-print(f"Lions: {PercentLions}")
-print(f"Tigers: {PercentTigers}")
+#percentage of big cats that are lions printed
+print(f"Lions: {PercentLions:.2%}".center(60))
+#percentage of big cats that are tigers printed
+print(f"Tigers: {PercentTigers:.2%}".center(60))
+#border
 print("=" * 60)
